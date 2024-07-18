@@ -1,0 +1,644 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #000;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.btn{
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+.btn:focus,
+.btn:active{
+box-shadow: none;
+outline: none;
+color: #fff;
+}
+.btn-common{
+font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+background-color: #ff6600;
+position: relative;
+z-index: 1;
+}
+button:focus{
+outline: none !important;
+}
+.btn.btn-secondary{
+  background: #ff6600;
+  border-color: #ff6600;
+  color: #fff;
+}
+.btn.btn-secondary:hover{
+  box-shadow: 1px 5px 12px rgba(0,0,0, 0.15);
+}
+.btn-secondary.banner_btn{
+  background: #ff6600;
+  border-color: #ff6600;
+color: #fff;
+  text-transform: capitalize;
+  margin-top: 30px;
+padding: 12px 32px;
+}
+
+/* Default navbar styling */
+.navbar {
+  background-color: #5e5e5f; /* Dark background color */
+  padding: 0.5rem 1rem;
+  color: #ccc !important; 
+}
+
+.navbar-brand span {
+  color: #ff6600; /* Brand text color */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-brand .typed-cursor {
+  color: #f0f1ef; /* Cursor color */
+}
+
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* Nav link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #f8f9fa; /* Lighter color on hover/focus */
+}
+
+/* Style for active link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff6600; /* Highlight color for active link */
+  font-weight: bold; /* Optional: bold text for active link */
+}
+
+/* Style for toggler */
+.navbar-toggler {
+  border-color: rgba(214, 205, 205, 0.1); /* Light border color */
+}
+
+/* Toggler icon styling */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* Media queries */
+
+/* For tablets and above (min-width: 768px) */
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row; /* Ensure items are in a row */
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end; /* Align items to the right */
+  }
+}
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0; /* Remove margin between items */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show toggler on mobile */
+  }
+
+  .navbar-collapse {
+    width: 100%; /* Full width on mobile */
+  }
+  
+}
+
+
+
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+top: 0;
+}
+.banner_content{
+margin-top: 230px;
+}
+.banner_content strong{
+  font-size: 30px;
+color: #222;
+}
+.banner_content h1{
+font-weight: 600;
+  color: #222;
+  font-size: 50px;
+  margin: 5px 0 10px;
+text-transform: capitalize;
+}
+.dark_bg .banner_content h1{
+color: #fff;
+}
+.banner_content h3{
+color:  #ff6600;
+text-transform: uppercase;
+font-size: 25px;
+}
+.banner_content h1 span .fw_600{
+font-weight: 600;
+}
+.cd-headline.clip .cd-words-wrapper::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+}
+.banner_content p{
+  color: #333333;
+font-size: 14px;
+  padding-bottom: 0;
+  max-width: 100%;
+}
+.dark_bg .banner_content p{
+color: #fff;
+}
+.banner-images img{
+margin-top: 90px;
+}
+
+
+.banner_content h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner_content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner_content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.banner_btn {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.banner-images img {
+  border: 2px solid #ff6600;
+ 
+}
+@media (max-width: 767px) {
+  .banner-images {
+    text-align: center;
+    
+
+     /* Center align text and images on mobile */
+  }
+
+  .banner-images img {
+    width: 80%;
+    /*Adjustwidthformobile*/max-width: none;
+    /*Removemax-widthconstraintonmobile*/border: 2px solid #ff6600;
+    height:500px ;
+    width:300px ;
+    margin-bottom:10px;
+}
+}
+
+
+
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  color: #ff6600;
+}
+
+
+/* General styles for .services-item */
+.services-item {
+  border: 1px solid #ccc;
+  background: #343a40; /* Dark background */
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 300px; /* Fixed height for consistent item sizes */
+}
+
+.section-title{
+  margin: 80px;
+}
+
+/* Dark background variations */
+.dark_bg .services-item {
+  border: 1px solid #fff; /* White border on dark background */
+
+}
+
+/* Hover effect for services-item */
+.services-item:hover {
+  transform: translateY(-10px); /* Moves item up on hover */
+}
+
+/* Icon styling */
+.services-item .icon {
+  background-size: contain; /* Ensure the background image is contained within the element */
+  width: auto; /* Adjusted width */
+  height: auto; /* Adjusted height */
+  margin: 0 auto; /* Center the icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Removed background image */
+}
+
+/* Image inside icon */
+.services-item .icon img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Heading styling within services-item */
+.services-item .services-content h3 {
+  margin: 10px 0; /* Margin for headings */
+}
+
+/* Link styling within headings */
+.services-item .services-content h3 a {
+  text-transform: uppercase;
+  font-size: 18px;
+  color:#ff6600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark background link color */
+.dark_bg .services-item .services-content h3 a {
+      
+       color: #ff6600;
+}
+
+/* Hover effect for link */
+.services-item:hover .services-content h3 a {
+  color: white;
+}
+
+
+
+/* Portfolio section styling */
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.portfolio-items .mix {
+  padding: 10px;
+  /* Hidden by default */
+}
+
+.portfolio-items .shot-item {
+  margin: 0 0 150px 0;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+
+.portfolio-items .portfolio-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-items .portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-items .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(8, 214, 101, 0.7); /* Semi-transparent green background */
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-items .shot-item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-items .overlay .icons {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+  background: #08d665;
+  padding: 8px;
+  cursor: pointer;
+  
+}
+
+.portfolio-items .overlay .preview {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin-top: -21px;
+}
+
+.portfolio-items .overlay .link {
+  right: 50%;
+  transform: translateX(50%);
+  top: 50%;
+  margin-top: -21px;
+}
+
+.portfolio-items .shot-content {
+  padding: 15px;
+}
+
+.portfolio-items .shot-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.portfolio-items .shot-content p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Active filter button styling */
+.controls .filter.active {
+  color: #f8f8f8 !important;
+  border-color: #fc8703;
+  background: transparent;
+ 
+}
+
+
+/*  About */.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.resume-link {
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.social-icon i {
+  margin-right: 2px;
+}
+
+.social-icon:hover {
+  color: #ff6600;
+}
+
+.btn-common {
+  margin: 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-common:hover {
+  background-color: #b87004;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blog Area Styles */
+.blog-area {
+  padding: 80px 0;
+  background-color: #111; /* Dark background for the blog area */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff; /* White color for the section title */
+}
+
+.section-title span {
+  color: #ff6600; /* Accent color for the title */
+}
+
+/* Single Blog Styles */
+.single_blog {
+  background-color: #292929;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  text-align: center; /* Center align text and elements */
+}
+
+.single_blog:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.single_blog .blog-thumb {
+  position: relative;
+}
+
+.single_blog .blog-thumb img {
+  width: 200px; /* Fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.single_blog .blog-info {
+  margin-top: 15px;
+}
+
+.single_blog h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.single_blog p {
+  font-size: 14px;
+  color: #ccc; /* Light gray for paragraph text */
+}
+
+.single_blog small {
+  font-size: 12px;
+  color: #aaa; /* Lighter gray for small text */
+  display: block;
+  margin-top: 5px;
+}
+
+.single_blog .icon img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px; /* Add some margin on top */
+  display: block;
+  margin: 10px auto 0 auto; /* Center the icon */
+}
+
+.blog_btn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #ff6600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog_btn:hover {
+  background-color: #e67e22;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .single_blog h4 {
+    font-size: 16px;
+  }
+
+  .single_blog p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.funfacts-area {
+  background-color: #292929;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.funfact {
+  margin-bottom: 30px;
+}
+
+.funfact i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+
+/*     */
+
+.center-div {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
