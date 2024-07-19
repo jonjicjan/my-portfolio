@@ -5,21 +5,18 @@ import NoteContext from '../context/notes/NoteContext'; // Correct import
 const Contact = () => {
   const { addNote, alert } = useContext(NoteContext); // Ensure context is correctly consumed
 
-  // Initial state for the note
   const [note, setNote] = useState({ name: "", email: "", subject: "", message: "" });
 
   // Event handler for form submission
   const handleClick = async (e) => {
     e.preventDefault();
     
-    // Validate the note details
     if (!note.name || !note.email || !note.subject || !note.message) {
       alert({ message: "All fields are required.", type: "error" });
       return;
     }
 
     try {
-      // Call addNote from context
       await addNote(note.name, note.email, note.subject, note.message);
       setNote({ name: "", email: "", subject: "", message: "" }); // Clear the form
     } catch (err) {
@@ -27,12 +24,10 @@ const Contact = () => {
     }
   };
 
-  // Event handler for input changes
   const onChange = (e) => {
     setNote({ ...note, [e.target.name]: e.target.value });
   };
 
-  // Render JSX
   return (
     <>
       <section id="contact" className="dark_bg section-padding">

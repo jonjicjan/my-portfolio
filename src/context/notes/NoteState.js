@@ -2,65 +2,37 @@ import React, { useState } from 'react';
 import NoteContext from './NoteContext';
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
-  const notesInitial = [];
-  const [notes, setNotes] = useState(notesInitial);
+  const host = "http://localhost:55000"; // Ensure the port matches your backend
+  const [message, setMessage] = useState([]);
   const [alert, setAlert] = useState({ message: "", type: "" }); // State for alert
-
-  // Get all Notes
-  const getNotes = async () => {
-    try {
-      const response = await fetch(`${host}/api/notes/fetchallnotes`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          "auth-token": localStorage.getItem('token'),
-        },
-      });
-      const json = await response.json();
-      setNotes(json);
-    } catch (error) {
-      console.error('Error fetching notes:', error);
-    }
-  };
 
   // Add a Note
   const addNote = async (name, email, subject, message) => {
-    const token = localStorage.getItem('token'); // Get token from localStorage or another secure place
-  
     try {
-      const response = await fetch(`${host}/api/notes/addnote`, {
+      const response = await fetch(`${host}/api/addmessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'auth-token': token // Send the token in the headers
+          "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVW1hciIsImVtYWlsIjoibWR1bWFyazc2YWE4N0BnbWFpbC5jb20iLCJpYXQiOjE3MjE0MjE1NDd9.1qlBAbc6eWUOdkMRPblNlTkyY_CczPeeDIISyGLfIYU"
+
         },
         body: JSON.stringify({ name, email, subject, message })
       });
-    
+
       const data = await response.json();
       if (response.ok) {
-        setNotes(notes.concat(data));
-        showAlert("Message send successfully!", "success");
+        setAlert({ message: "Message sent successfully!", type: "success" });
       } else {
-        showAlert("Error sending message. Please try again.", "error");
+        setAlert({ message: "Error sending message. Please try again.", type: "error" });
       }
     } catch (err) {
-      showAlert("Error adding note. Please try again.", "error");
+      setAlert({ message: "Error adding note. Please try again.", type: "error" });
       console.error('Error adding note:', err);
     }
   };
 
-  // Function to show alert
-  const showAlert = (message, type) => {
-    setAlert({ message, type });
-    setTimeout(() => {
-      setAlert({ message: "", type: "" });
-    },3000); // Alert duration: 3 seconds
-  };
-
   return (
-    <NoteContext.Provider value={{ notes, addNote, getNotes, alert }}>
+    <NoteContext.Provider value={{ message, addNote, alert }}>
       {props.children}
     </NoteContext.Provider>
   );

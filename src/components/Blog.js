@@ -30,7 +30,7 @@ const Blog = () => {
                     <div className="icon">
                       <img
                         src="https://github.com/jonjicjan/freeanime/blob/main/Anm1.jpg?raw=true"
-                        alt=" "
+                        alt="loading.img "
                       />
                     </div>
                     <a href="https://jonjicjan.github.io/freeanime/" className="btn blog_btn btn-secondary">
