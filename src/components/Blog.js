@@ -34,15 +34,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInUp">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b3.png"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project Second"</h4>
@@ -64,15 +55,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInRight">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b5.png"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project Third"</h4>
@@ -98,15 +80,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInLeft">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b8.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project Fourth"</h4>
@@ -128,15 +101,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInUp">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b7.png"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project Fifth"</h4>
@@ -158,15 +122,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInRight">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b2.png"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project Sixth"</h4>
