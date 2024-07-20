@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors({
     origin: 'http://localhost:3000', // Replace with your frontend origin
     methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['Content-Type', 'auth-token'],
 }));
 
 // Import and use the router for handling messages
