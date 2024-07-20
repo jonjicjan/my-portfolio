@@ -41,9 +41,10 @@ const About = () => {
                 <a href="http://www.linkedin.com/in/mohammad-umar-khan-softwaredeveloper" target="_blank" rel="noopener noreferrer" className="btn btn-common">
                   View My LinkedIn Profile
                 </a>
-                <a href="/umarresume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-common">
+            {  /*
+              <a href="/umarresume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-common">
                   Download My Resume
-                </a>
+                </a>  */ }
               </div>
               <div className="college-details">
                 <h3>Currently Study :</h3>

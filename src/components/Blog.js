@@ -13,15 +13,6 @@ const Blog = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="single_blog wow fadeInLeft">
                 <div className="blog-thumb">
-                  <div className="blog-image">
-                    <a href="#">
-                      <img
-                        src="assets/img/b4.png"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </a>
-                  </div>
                   <div className="blog-info">
                     <a href="#">
                       <h4>"Project First"</h4>

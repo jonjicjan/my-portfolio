@@ -45,6 +45,16 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+	  <footer className="footer dark_bg_menu">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <p>&copy; {new Date().getFullYear()} Mohammad Umar Khan. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     </>
   );
 };

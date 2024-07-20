@@ -21,7 +21,7 @@ const Navbar = () => {
               <ReactTyped   
                 strings={[
                   "Welcome to My Site",
-                  "Codebykhan99@gmail.com",
+                  "Codebykhan99@....",
                   "My Portfolio"
                 ]}
                 typeSpeed={60}

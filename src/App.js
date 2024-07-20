@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes ,Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';  // Import your Navbar component
 import Home from './components/Home';  // Create these pages as needed
 import About from './components/About';
@@ -25,6 +25,7 @@ function App() {
       {/*   <Route path="/portfolio" element={<Portfolio />} />  */ }
         <Route path="/myprojects" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} /> {/* Default route to Home */}
       </Routes>
      
     </Router>
