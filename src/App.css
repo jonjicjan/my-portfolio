@@ -79,7 +79,7 @@ button:focus {
 
 .navbar-brand span {
   color: #ff6600;
-  margin: 0;
+  margin:auto ;
 }
 
 .navbar-brand .typed-cursor {

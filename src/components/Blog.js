@@ -187,7 +187,7 @@ const Blog = () => {
                         alt=" "
                       />
                     </div>
-                    <a href="#" className="btn blog_btn btn-secondary">
+                    <a href="https://jonjicjan.github.io/My-Portfolio/" className="btn blog_btn btn-secondary">
                       View now
                     </a>
                   </div>

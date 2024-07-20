@@ -33,7 +33,7 @@ const NoteState = (props) => {
       }, 3000);
 
     } catch (err) {
-      setAlert({ message: "Error adding message. Please try again.", type: "error" });
+      setAlert({ message: "Server refused by Owner . try again", type: "error" });
       console.error('Error adding message:', err);
 
       // Clear alert after 3 seconds
